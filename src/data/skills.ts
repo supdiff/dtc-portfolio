@@ -1,6 +1,7 @@
 export const skillsAndTools = [
   { name: 'ReactJs' },
   { name: 'NextJs' },
+  { name: 'Laravel' },
   { name: 'SvelteJs' },
   { name: 'AstroJs' },
   { name: 'JavaScript' },
@@ -15,7 +16,6 @@ export const skillsAndTools = [
   { name: 'Git' },
   { name: 'GitHub' },
   { name: 'Kotlin' },
-  { name: 'Expo' },
   { name: 'SQL' },
   { name: 'Docker' },
   { name: 'Linux' },

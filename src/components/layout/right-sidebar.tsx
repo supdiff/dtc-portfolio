@@ -24,8 +24,8 @@ const sectionHeadings = {
   ],
   writings: [
     { id: 'writings-intro', title: 'Introduction' },
-    { id: 'featured-articles', title: 'Featured Articles' },
-    { id: 'recent-articles', title: 'Recent Articles' },
+    // { id: 'featured-articles', title: 'Featured Articles' },
+    // { id: 'recent-articles', title: 'Recent Articles' },
     { id: 'topics', title: 'Navigation' },
   ],
   contact: [
@@ -56,7 +56,7 @@ export function RightSidebar({ activeSection }: TableOfContentsProps) {
       const headings =
         activeSection === 'contact'
           ? allHeadings.filter(
-              (h) => h.id !== 'message-form' || isDirectMessageVisible
+              (h) => h.id !== 'message-form' || isDirectMessageVisible,
             )
           : allHeadings;
 
@@ -160,7 +160,7 @@ export function RightSidebar({ activeSection }: TableOfContentsProps) {
   const currentHeadings =
     activeSection === 'contact'
       ? allHeadingsForCurrentSection.filter(
-          (heading) => heading.id !== 'message-form' || isDirectMessageVisible
+          (heading) => heading.id !== 'message-form' || isDirectMessageVisible,
         )
       : allHeadingsForCurrentSection;
 
@@ -182,7 +182,7 @@ export function RightSidebar({ activeSection }: TableOfContentsProps) {
                         'absolute -left-[3px] top-3 w-1.5 h-1.5 rounded-full transition-all duration-200',
                         activeHeading === heading.id
                           ? 'bg-primary scale-125'
-                          : 'bg-muted-foreground/30 scale-75'
+                          : 'bg-muted-foreground/30 scale-75',
                       )}
                     />
                     {activeHeading === heading.id && (
@@ -194,7 +194,7 @@ export function RightSidebar({ activeSection }: TableOfContentsProps) {
                         'block w-full text-left text-sm py-2 pl-6 pr-2 rounded-r transition-all duration-200 hover:bg-muted/50',
                         activeHeading === heading.id
                           ? 'text-primary font-medium bg-primary/5'
-                          : 'text-muted-foreground hover:text-foreground'
+                          : 'text-muted-foreground hover:text-foreground',
                       )}
                     >
                       <span className="block truncate">{heading.title}</span>

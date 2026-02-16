@@ -1,7 +1,7 @@
 import type React from 'react';
 import { cn } from '@/lib/utils';
 import { Code2, GitBranch, Zap } from 'lucide-react';
-import { FaReact, FaJava, FaAndroid } from 'react-icons/fa';
+import { FaReact, FaJava, FaAndroid, FaLaravel } from 'react-icons/fa';
 import {
   SiNextdotjs,
   SiTypescript,
@@ -38,6 +38,7 @@ interface SkillBadgeWithIconsProps {
 const iconMap: Record<string, React.ReactNode> = {
   ReactJs: <FaReact className="w-4 h-4 text-blue-400" />,
   NextJs: <SiNextdotjs className="w-4 h-4" />,
+  Laravel: <FaLaravel className="w-4 h-4 text-red-400" />,
   SvelteJs: <RiSvelteLine className="w-4 h-4 text-red-400" />,
   AstroJs: <SiAstro className="w-4 h-4" />,
   JavaScript: <SiJavascript className="w-4 h-4 text-yellow-500" />,
